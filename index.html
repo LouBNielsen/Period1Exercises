@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="day1.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    helllo
+    <div id=names></div>
+    <button onclick="showAllNames()">Show all names</button> 
+    <button onclick="showAllNamesWithFilter()">Show all names with filter</button>
+
+<script>
+
+    function showAllNames() {
+        document.getElementById("names").innerHTML = rowsStr;
+    };
+
+    function showAllNamesWithFilter() {
+        document.getElementById("names").innerHTML = rowsStr.filteredNames3();
+    };
+
+    function showAllNamesWithFilter2() {
+        document.getElementById("names").addEventListener("click", myFilter);
+    };
+
+    function myFilter(){
+        
+    };
+
+</script>
+
+</body>
+
+</html>
